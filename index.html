@@ -37,7 +37,7 @@
               <a href="signup.html">Sign Up</a>
             </li>
             <li>
-              <a href="#" class="btn purple">login</a>
+              <a href="#login-modal" class="btn purple modal-trigger">login</a>
             </li>
             <li>
               <a href="https://facebook.com">
@@ -225,7 +225,9 @@
               <h2>Testimonial 1</h2>
               <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dicta harum molestiae facilis, soluta necessitatibus
                 doloremque tempore fugiat voluptatum, nemo quia hic quam, voluptate provident. Modi totam fugiat harum commodi.
-                <em>- John Doe from Microsystems</em>
+                <p>
+                  <em>- John Doe from Microsystems</em>
+                </p>
               </p>
               <div class="carousel-fixed-item center hide-on-small-and-down">
                 <a href="#" class="btn grey">Read More..</a>
@@ -235,7 +237,9 @@
               <h2>Testimonial 2</h2>
               <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dicta harum molestiae facilis, soluta necessitatibus
                 doloremque tempore fugiat voluptatum, nemo quia hic quam, voluptate provident. Modi totam fugiat harum commodi.
-                <em>- Mike Smith from Techsystems</em>
+                <p>
+                  <em>- Mike Smith from Techsystems</em>
+                </p>
               </p>
               <div class="carousel-fixed-item center hide-on-small-and-down">
                 <a href="#" class="btn grey">Read More..</a>
@@ -245,7 +249,9 @@
               <h2>Testimonial 3</h2>
               <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dicta harum molestiae facilis, soluta necessitatibus
                 doloremque tempore fugiat voluptatum, nemo quia hic quam, voluptate provident. Modi totam fugiat harum commodi.
-                <em>- Karen Williams from Powersystems</em>
+                <p>
+                  <em>- Karen Williams from Powersystems</em>
+                </p>
               </p>
               <div class="carousel-fixed-item center hide-on-small-and-down">
                 <a href="#" class="btn grey">Read More..</a>
@@ -257,6 +263,63 @@
     </div>
   </section>
 
+  <!-- Footer -->
+  <footer class="page-footer deep-purple lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About Us</h5>
+          <p class="grey-text text-lighten-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore nemo est nobis magni! Sapiente cum dolorum repudiandae
+            error suscipit non.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-3" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="solutions.html">Solutions</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="signup.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright deep-purple darken-1">
+      <div class="container">
+        Quazzu &copy; 2018
+        <a class="grey-text text-lighten-4 right" href="#!">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Login Modal -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <h4>Account Login</h4>
+      <p>Login to access your account dashboard</p>
+      <form>
+        <div class="input-field">
+          <input type="email" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password">
+          <label for="password">Password</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close btn grey">
+        <i class="fa fa-sync"></i> Reset Password</a>
+      <a href="#!" class="modal-action modal-close btn purple">
+        <i class="fa fa-lock"></i> Login</a>
+    </div>
+  </div>
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -267,6 +330,8 @@
         fullWidth: true
       });
       $('.button-collapse').sideNav();
+
+      $('.modal').modal();
 
     });
   </script>
